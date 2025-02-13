@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Job Type Spinner -->
+    <Spinner
+        android:id="@+id/jobTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <!-- Checkboxes for Days of the Week -->
+    <CheckBox android:id="@+id/mondayCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Monday" />
+    <CheckBox android:id="@+id/tuesdayCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tuesday" />
+    <CheckBox android:id="@+id/wednesdayCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wednesday" />
+    <CheckBox android:id="@+id/thursdayCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thursday" />
+    <CheckBox android:id="@+id/fridayCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Friday" />
+    <CheckBox android:id="@+id/saturdayCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saturday" />
+    <CheckBox android:id="@+id/sundayCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sunday" />
+
+    <!-- Label for Time Range -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Time Range:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/timeFromEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="From (e.g., 08:00)"
+        android:inputType="number"
+        android:maxLength="5"
+        android:digits="0123456789:"
+        android:importantForAccessibility="yes"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/timeToEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To (e.g., 18:00)"
+        android:inputType="number"
+        android:maxLength="5"
+        android:digits="0123456789:"
+        android:importantForAccessibility="yes"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

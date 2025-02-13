@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HireMe</string>
+
+    <string-array name="job_types">
+        <item>General Cleaning</item>
+        <item>MakeUp</item>
+        <item>BabySitter</item>
+        <item>Chef Cooking</item>
+        <item>Laundry</item>
+    </string-array>
+
+</resources>
